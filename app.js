@@ -15,6 +15,7 @@ app
         const scores = await Scoreboard
         .find()
         .sort(req.query.sort);
+        console.log(scores)
         res
             .status(200)
             .json(scores);
